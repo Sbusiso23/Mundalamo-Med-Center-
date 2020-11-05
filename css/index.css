@@ -1,0 +1,125 @@
+/*			Landing Page UI		*/
+
+html, body{
+	font-size: 16px;
+}
+
+a{
+	color: #000;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.nav-container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-top{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 1px solid #C8C8C8;
+}
+
+.nav-logo img{
+	width: 9rem;
+	height: 9rem;
+} 
+
+.nav-logo{
+	display: flex;
+	flex-direction: row;
+	padding: 1.0rem 0 0 0.5rem;
+}
+
+.nav-logo-name{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center; 
+}
+
+#nav-logo-name-1{
+	color: #000;
+	text-decoration: none;
+	font-size: 2.3rem;
+	font-family: serif;
+	font-weight: 600; 
+}
+
+#nav-logo-name-2{
+	text-decoration: none;
+	color: #FD2A2A;
+	font-size: 2.3rem;
+	font-weight: 450;
+	align-self: center;
+	margin-top: -.7rem;
+}
+
+.nav-contact-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: .5rem 2.2rem 0 1rem;
+	line-height: 2rem;
+}
+
+.nav-contact-info span{
+	font-size: 1.1rem;
+}
+
+.nav-contact-info span a:hover{
+	text-decoration: underline;
+	color: #000;
+}
+
+.nav-bottom{
+	margin-bottom: 0;
+}
+
+.nav-links{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	background: #FC5050;
+	height: 2.5rem;
+	margin-bottom: 0;
+}
+
+.nav-links a{
+	text-decoration: none;
+	list-style: none;
+	color: #FFF !important;
+	font-size: 1.1rem;
+}
+
+.main-content{
+	width: 100%;
+}
+
+.cover{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	background-image: url('../images/stethescope-02.jpg'); 
+	text-align: center;
+    width: 100%;
+    height: 80vh;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+.cover img{
+	width: 100%;
+	height: 70vh;
+}
