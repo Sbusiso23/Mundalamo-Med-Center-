@@ -1,4 +1,4 @@
-/*			Landing Page UI		*/
+/*			Config styling 				*/
 
 html, body{
 	font-size: 16px;
@@ -12,6 +12,8 @@ a:hover{
 	text-decoration: none;
 }
 
+
+/*			Navbar section styling			*/
 .nav-container{
 	width: 100%;
 	display: flex;
@@ -79,7 +81,10 @@ a:hover{
 }
 
 .nav-bottom{
+	padding-top: .4rem;
 	margin-bottom: 0;
+	background: #FC5050;
+	height: 2.5rem;
 }
 
 .nav-links{
@@ -87,9 +92,6 @@ a:hover{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	background: #FC5050;
-	height: 2.5rem;
-	margin-bottom: 0;
 }
 
 .nav-links a{
@@ -112,14 +114,237 @@ a:hover{
 	text-align: center;
     width: 100%;
     height: 80vh;
-    /*background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
 }
 
-.cover img{
+.section-header{
+	color: #404040;
+	border-bottom: 3px solid #F00;
+	padding-bottom: .7rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*		About section styling				*/
+
+.about-container{
+	display: flex;
+	flex-direction: column;
 	width: 100%;
-	height: 70vh;
+	padding: 2rem 0;
+}
+
+.about-header{
+	width: 9.8rem;
+}
+
+.about-content-container{
+	display: flex;
+	flex-direction: row;
+	padding: 4rem 2rem 2rem 2rem;
+}
+
+.about-image{
+	width: 50%;
+}
+
+.about-image img{
+	width: 95%;
+	height: auto;
+}
+
+.about-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	padding-top: 2rem;
+}
+
+.about-info p{
+	font-size: 1.1rem;
+}
+
+
+
+/*			Contact section styling			*/
+
+.contact-header{
+	width: 8.5rem;
+}
+
+.contact-content-container{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-form-container{
+	width: 50%;
+	padding-top: 4rem;
+}
+
+.contact-form-header{
+	/*margin-left: 30%;*/
+	margin-bottom: .8rem;
+
+}
+
+.contact-form-container, .contact-location-container{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form-container form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-form-input, .contact-form-textarea{
+	color: #747474;
+	padding-left: .9rem;
+	border: 1px solid #D2D2D2;
+	width: 22rem;
+	height: 2.3rem;
+	margin-bottom: 1rem;
+}
+
+.contact-form-textarea{
+	height: 6.9rem;
+}
+
+.contact-form-submit{
+	background: #FD2A2A;
+	color: #F0F0F0;
+	border: none;
+	width: 22rem;
+	height: 2.3rem;
+	font-weight: bold;
+}
+
+.contact-location-container{
+	width: 50%;
+	padding: 3rem;
+}
+
+.contact-location-header{
+	margin-bottom: 1.5rem;
+}
+
+.contact-location-container iframe{
+	 width: 100%;
+	 height: 21rem; 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.nav-top{
+		padding-bottom: 1rem;
+		justify-content: flex-start;
+	}
+
+	.nav-logo img{
+		width: 5rem;
+		height: 5rem;
+	} 
+
+	#nav-logo-name-1{
+		font-size: 1.9rem;
+	}
+
+	#nav-logo-name-2{
+		font-size: 1.9rem;
+		margin-top: -.9rem;
+	}
+
+	.nav-contact-info{
+		display: none;
+	}
+
+	.nav-links{
+		display: none;
+	}
+
+
+	.section-header{
+		font-size: 1.8rem;	
+		padding-bottom: .5rem;
+	}
+
+	.about-header{
+		width: 8.5rem;
+	}
+
+	.about-content-container{
+		flex-direction: column;
+		align-items: center;  
+		/*padding: 4rem 2rem 0 2rem;*/
+	}
+
+	.about-image{
+		width: 100%;
+	}
+
+	.about-image img{
+		width: 100%;
+	}
+
+	.about-info{
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	.contact-content-container{
+		flex-direction: column;
+	}
+
+	.contact-form-container{
+		width: 100%;
+		padding-top: 3.5rem;
+	}
+
+	.contact-location-container{
+		padding-top: 3rem;
+		width: 100%;
+	}
+
+	.contact-location-container iframe{
+		 width: 100%;
+		 height: 25rem; 
+	}
+
+}
+
+@media only screen and (max-width: 576px) {
+	.nav-logo{
+		margin-top: .5rem; 
+	}
+	.nav-logo img{
+		width: 4rem;
+		height: 4rem;
+	} 
+
+	#nav-logo-name-1{
+		font-size: 1.5rem;
+	}
+
+	#nav-logo-name-2{
+		font-size: 1.5rem;
+		margin-top: -.5rem;
+	}
+
+	.cover{
+	    height: 70vh;
+	}
+
+	.contact-form-input, .contact-form-textarea, .contact-form-submit{
+		width: 18rem;
+	}
 }
