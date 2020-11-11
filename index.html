@@ -1,17 +1,40 @@
 <!Doctype html>
+
+<!--
+	-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+	
+		 ________            __    __  __                                      ______               __
+		/\_____  \          /\ \__/\ \/\ \                                    /\__  _\             /\ \
+		\/___//'/' __    ___\ \ ,_\ \ \_\ \    ___   __  __    ____     __    \/_/\ \/    __    ___\ \ \___
+			/' /'/'__`\/' _ `\ \ \/\ \  _  \  / __`\/\ \/\ \  /',__\  /'__`\     \ \ \  /'__`\ /'___\ \  _ `\
+		  /' /' /\  __//\ \/\ \ \ \_\ \ \ \ \/\ \L\ \ \ \_\ \/\__, `\/\  __/      \ \ \/\  __//\ \__/\ \ \ \ \
+		 /\_/   \ \____\ \_\ \_\ \__\\ \_\ \_\ \____/\ \____/\/\____/\ \____\      \ \_\ \____\ \____\\ \_\ \_\
+		 \//     \/____/\/_/\/_/\/__/ \/_/\/_/\/___/  \/___/  \/___/  \/____/       \/_/\/____/\/____/ \/_/\/_/
+
+	-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+	
+	#	Author: 7entHouse Tech PTY(LTD)
+	#	About: A House of Perfect Tech Solutions
+	#	Website: www.7enthousetech.co.za
+	#	Email: info@7enthousetech.co.za
+	
+	-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+	
+-->
+
 <html>
 	<head>
 		<title>Mundalamo Medical Center • Quality health care for your family </title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
 	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+	    <meta name="author" content="7entHouse Tech">
 	    <meta name="keywords" content="">
 	    <meta name="description" content="">
 	    <meta property="og:type" content="website">
-	    <meta property="og:url" content="{{url()->full()}}">
+	    <meta property="og:url" content="">
 	    <meta property="og:title" content="">
 	    <meta property="og:description" content="">
-	    <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	    <link rel="stylesheet" href="css/index.css">
 	    <script type="text/javascript" src="js/index.js"></script>
@@ -49,9 +72,46 @@
 		</nav>
 		<main class="main-content">
 			<section class="cover">
-				<!-- <img src="images/stethescope-02.jpg"> -->
 			</section>
-			<section class="services-container" id="services"></section>
+			<section class="services-container" id="services">
+				<h2 class="section-header services-header">Services</h2>
+				<div class="services-content-container">
+					<div class="services-content-row">
+						<div class="service-container">
+							<img src="images/icons/pharmacy-icon.png" class="service-icon" id="pharmacy-icon">
+							<span class="service-name">Pharmacy</span>
+							<button class="service-more-btn">View More</button>
+						</div>
+						<div class="service-container">
+							<img src="images/icons/dentist-icon.png" class="service-icon">
+							<span class="service-name">Dentist</span>
+							<button class="service-more-btn">View More</button>
+						</div>
+						<div class="service-container">
+							<img src="images/icons/psychology-icon.png" class="service-icon">
+							<span class="service-name">Psychologist</span>
+							<button class="service-more-btn">View More</button>
+						</div>
+					</div>
+					<div class="services-content-row">
+						<div class="service-container">
+							<img src="images/icons/question-icon.png" class="service-icon">
+							<span class="service-name">Consultation</span>
+							<button class="service-more-btn">View More</button>
+						</div>
+						<div class="service-container">
+							<img src="images/icons/doctor-icon.png" class="service-icon">
+							<span class="service-name">Checkup</span>
+							<button class="service-more-btn">View More</button>
+						</div>
+						<div class="service-container">
+							<img src="images/icons/search-icon.png" class="service-icon">
+							<span class="service-name">Examination</span>
+							<button class="service-more-btn">View More</button>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="about-container" id="about">
 				<h2 class="section-header about-header">About Us</h2>
 				<div class="about-content-container">
@@ -118,7 +178,7 @@
 				</div>
 			</div>
 			<div class="footer-copyright-container">
-				<span>Copyright &copy 2020 Dr. MF Mundalamo Medical Center</span>
+				<span class="footer-copyright-text">Copyright &copy 2020 Dr. MF Mundalamo Medical Center &bull; Designed with <i class='fas fa-heart'></i> by <a href="https://www.7entHouseTech.co.za/" id="ht" target="_blank">7entHouse Tech</a></span></span>
 			</div>
 		</footer>
 	</body>

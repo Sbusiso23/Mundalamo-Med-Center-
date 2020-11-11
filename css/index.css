@@ -128,7 +128,75 @@ a:hover{
 	text-align: center;
 }
 
-/*		About section styling				*/
+
+/*		Services Section Styling			*/
+
+.services-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 2rem;
+}
+
+.services-header{
+	width: 7.3rem;
+}
+
+.services-content-container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 4rem;
+	align-items: center;
+}
+
+.services-content-row{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.service-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #C8C8C8;
+	margin: 0 2rem 2rem 0;
+	width: 14rem;
+	height: 17rem;
+}
+
+.service-name{
+	font-size: 1.8rem;
+	font-family: sans-serif;
+	color: #454545;
+	font-weight: bold;
+}
+
+.service-icon{
+	width: 4rem;
+	height: 4rem;
+}
+
+#pharmacy-icon{
+	height: 3rem;
+	width: 5rem;
+}
+
+.service-more-btn{
+	margin-top: 4rem;
+	width: 9rem;
+	background: #FD2A2A;
+	color: #FFF;
+	border-radius: 1rem;
+	border: 1px solid #F00;
+}
+
+
+/*		About Section Styling				*/
 
 .about-container{
 	display: flex;
@@ -256,13 +324,17 @@ a:hover{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-bottom: 0rem;
+	padding-bottom: 2rem;
 }
 
 
 .footer-content-info{
 	display: flex;
 	flex-direction: column;
+}
+
+.footer-logo-container{
+	align-self: center;
 }
 
 .footer-hours-container, .footer-address-container{
@@ -283,6 +355,22 @@ a:hover{
 	justify-content: center;
 }
 
+.footer-copyright-text{
+	font-size: .8rem;
+}
+
+
+#ht {
+	color: #5CA7F7 !important;
+}
+	
+#ht:hover {
+	text-decoration: underline !important;
+}
+
+.fa-heart{
+	color: rgb(255, 11, 182);
+}
 
 @media only screen and (max-width: 768px) {
 	.nav-top{
@@ -315,6 +403,22 @@ a:hover{
 	.section-header{
 		font-size: 1.8rem;	
 		padding-bottom: .5rem;
+	}
+
+	.services-content-row{
+		padding-left: 2rem;
+	}
+
+	.service-container{
+		width: 14rem;
+	}
+
+	.service-more-btn{
+		width: 8rem;
+	}
+
+	.service-name{
+		font-size: 1.5rem;
 	}
 
 	.about-header{
@@ -376,12 +480,13 @@ a:hover{
 	.nav-logo{
 		margin-top: .5rem; 
 	}
+
 	.nav-logo img{
 		width: 4rem;
 		height: 4rem;
 	} 
 
-	#nav-logo-name-1{
+	#nav-logo-name-1, #footer-logo-name{
 		font-size: 1.5rem;
 	}
 
@@ -393,6 +498,24 @@ a:hover{
 	.cover{
 	    height: 70vh;
 	}
+
+	.services-content-row{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.service-container{
+		margin-top: 2rem;
+		width: 13rem;
+		height: 15rem;
+	}
+
+	.service-more-btn{
+		margin-top: 3rem;
+		width: 8rem;
+	}
+
 
 	.contact-form-input, .contact-form-textarea, .contact-form-submit{
 		width: 18rem;
