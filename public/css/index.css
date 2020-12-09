@@ -5,11 +5,11 @@ html, body{
 }
 
 a{
-	color: #000;
+	color: #000 !important;
 }
 
 a:hover{
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 
@@ -76,8 +76,32 @@ a:hover{
 }
 
 .nav-contact-info span a:hover{
-	text-decoration: underline;
+	text-decoration: underline !important;
 	color: #000;
+}
+
+.mobile-contact-info-container{
+	background: #EAEAEA;
+	display: none;
+	flex-direction: column;
+	width: 100%;
+}
+
+.mobile-contact-info-1{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.mobile-contact-info-2{
+	font-size: .9rem;
+	width: 100%;
+	border-top: 1px solid #B2B2B2;
+	border-bottom: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 .nav-bottom{
@@ -172,15 +196,17 @@ a:hover{
 	justify-content: center;
 	align-items: center;
 	padding-top: 2rem;
+	transform: ease .7s;
 }
 
 .service-back{
 	display: none;
 	flex-direction: column;
 	transform: rotateY(-180deg);
-	background: #FDFDFD;
+	background: #FEFEFE;
 	width: 100%;
 	height: 100%;
+	transform: ease .7s;
 }
 
 .service-back-close{
@@ -192,12 +218,11 @@ a:hover{
 }
 
 .card-flip{
-	transform-style: preserve-3d;
-    transition: all .9s ease;
+    transition: all .7s ease;
 }
 
 .flip{
-	transform: rotateY(180deg);
+	transform: perspective(50rem) rotateY(180deg);
 }
 
 .service-name{
@@ -396,7 +421,7 @@ a:hover{
 }
 	
 #ht:hover {
-	text-decoration: underline !important;
+	/*text-decoration: underline !important;*/
 }
 
 .fa-heart{
@@ -425,6 +450,10 @@ a:hover{
 
 	.nav-contact-info{
 		display: none;
+	}
+
+	.mobile-contact-info-container{
+		display: flex;
 	}
 
 	.nav-links{
@@ -546,8 +575,15 @@ a:hover{
 		width: 8rem;
 	}
 
+	.service-back-close{
+		margin-left: 11.5rem;
+	}
 
 	.contact-form-input, .contact-form-textarea, .contact-form-submit{
-		width: 18rem;
+		width: 16rem;
+	}
+
+	.contact-location-container {
+	    padding: 3rem 2rem;
 	}
 }
